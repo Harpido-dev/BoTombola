@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoTombola</title>
+
+    <!-- CSS laden -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>BoTombola</h1>
+
+    <div class="card">
+        <h2>Los hinzufügen</h2>
+        <input id="losInput" type="number" placeholder="Losnummer eingeben" />
+        <button onclick="addLos()">Hinzufügen</button>
+
+        <h3>Meine Lose:</h3>
+        <ul id="losListe"></ul>
+    </div>
+
+    <div class="card">
+        <h2>Gezogene Nummer prüfen</h2>
+        <input id="checkInput" type="number" placeholder="Gezogene Nummer" />
+        <button onclick="checkLos()">Checken</button>
+        <p id="result"></p>
+    </div>
+
+    <!-- JavaScript laden -->
+    <script src="script.js"></script>
+</body>
+</html>
