@@ -37,12 +37,26 @@ function checkLos() {
     }
 }
 
+function removeLos(val) {
+    lose = lose.filter(n => n !== val);
+    save();
+}
+
+
 function render() {
     const ul = document.getElementById("losListe");
     ul.innerHTML = "";
+
     lose.forEach(n => {
         const li = document.createElement("li");
         li.textContent = n;
+
+        const btn = document.createElement("div");
+        btn.textContent = "−";
+        btn.className = "remove";
+        btn.onclick = () => removeLos(n);
+
+        li.appendChild(btn);
         ul.appendChild(li);
     });
 }

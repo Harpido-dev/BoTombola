@@ -11,20 +11,21 @@
 <body>
     <h1>BoTombola</h1>
 
-    <div class="card">
-        <h2>Los hinzufügen</h2>
-        <input id="losInput" type="number" placeholder="Losnummer eingeben" />
-        <button onclick="addLos()">Hinzufügen</button>
-
-        <h3>Meine Lose:</h3>
-        <ul id="losListe"></ul>
-    </div>
-
+    <!-- PRÜFEN JETZT OBEN -->
     <div class="card">
         <h2>Gezogene Nummer prüfen</h2>
         <input id="checkInput" type="number" placeholder="Gezogene Nummer" />
         <button onclick="checkLos()">Checken</button>
         <p id="result"></p>
+    </div>
+
+    <!-- MEINE LOSE JETZT UNTEN -->
+    <div class="card">
+        <h2>Meine Lose</h2>
+        <input id="losInput" type="number" placeholder="Neues Los hinzufügen" />
+        <button onclick="addLos()">Hinzufügen</button>
+
+        <ul id="losListe"></ul>
     </div>
 
     <!-- JavaScript laden -->
